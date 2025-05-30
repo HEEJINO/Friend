@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/inviteCodeEditText"
+        android:hint="초대 코드 입력"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"/>
+
+    <Button
+        android:id="@+id/joinByCodeButton"
+        android:text="코드로 참가"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+</LinearLayout>

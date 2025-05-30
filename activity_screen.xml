@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 버튼 영역 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/createRoomButton"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="방 생성"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/rank"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="랭킹"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="참여하는 방 목록"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/roomSelectRecyclerViewSelectRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:contentDescription="참여하는 방 내역"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="20dp"/>
+
+
+</LinearLayout>
